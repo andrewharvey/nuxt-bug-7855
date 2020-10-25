@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
-    "nuxt": "^2.14.7"
+    "nuxt-edge": "^2.14.8-26726442.046a0a4b"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
