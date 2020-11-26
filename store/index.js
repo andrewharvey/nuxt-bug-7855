@@ -10,6 +10,15 @@ photos.features.forEach((feature) => {
   features.push(result)
 })
 
+/* this avoids the memory leak */
+/*
+export const state = () => ({
+  walks: walks,
+  photos: features
+})
+*/
+
+/* this triggers the memory leak */
 export const state = () => ({
   walks: walks,
   photos: photos.features.map((feature) => {
@@ -18,4 +27,5 @@ export const state = () => ({
       lng: feature.geometry && feature.geometry.coordinates[0]
     })
   })
+  */
 })
